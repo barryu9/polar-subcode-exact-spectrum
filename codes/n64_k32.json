@@ -1,0 +1,78 @@
+{
+  "N": 64,
+  "K": 32,
+  "d_min": 12,
+  "information_set": [
+    15,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    35,
+    37,
+    38,
+    39,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    51,
+    53,
+    54,
+    55,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+  ],
+  "indexing": "Zero-based, no bit reversal.",
+  "initialization": "All-zero expressions; independent of reference expression coefficients.",
+  "frozen_expressions": {
+    "41": [
+      22,
+      25,
+      26,
+      28,
+      35,
+      37,
+      38
+    ],
+    "49": [
+      22,
+      26,
+      42
+    ],
+    "50": [
+      21,
+      22,
+      35,
+      44
+    ],
+    "52": [
+      21,
+      25,
+      35
+    ],
+    "56": [
+      22,
+      37
+    ]
+  },
+  "target_weight_witness": {
+    "source": 21,
+    "input_hex": "0x14000000200000",
+    "word_hex": "0x14001400270027",
+    "weight": 12
+  }
+}

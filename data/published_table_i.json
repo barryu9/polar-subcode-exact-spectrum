@@ -1,0 +1,329 @@
+{
+  "paper_title": "Design Frozen Expressions for Polar Subcodes via Exact Low-weight Spectrum Characterization",
+  "timing_provenance": "Archived measurements from the original local native-assisted implementation; not timings of this pure-Python teaching implementation.",
+  "original_hardware": {
+    "CPU": "Intel Core i7-12700K",
+    "memory_GiB": 32,
+    "threads": 1
+  },
+  "timing_scope": "Directories, shared observation compression, solving, coefficient recovery and verification. Enumeration-count and zero-first control audits are separate.",
+  "SQ_scope": "All recursive extension calls of a complete V common directory, or all critical-left T extensions at the last active stage.",
+  "SQ_exclusions": "Scalar base cases, factorization work and outside-syndrome tests. Counts are not operation counts or runtime speedups.",
+  "reference_expression_coefficients_used": false,
+  "rows": [
+    {
+      "case": "n64_k32",
+      "d_P": 8,
+      "d_target": 12,
+      "stages": [
+        {
+          "kind": "V",
+          "N": 64,
+          "K": 32,
+          "groups": 1936,
+          "cutoff": 8,
+          "RM_gap_used": true,
+          "q": 105,
+          "nodes": 25
+        }
+      ],
+      "zero_first_nodes": null,
+      "enumeration": {
+        "direct_candidates": 79991,
+        "quotient_lifts": 3626,
+        "final_directory_outputs": 3481,
+        "output_sha256": "47eb7fd4fbdf1952c76cf5c22f283e7a41caa868f742e2fae289bc5a6f377c1a",
+        "SQ_exact_fraction": "79991/3626"
+      },
+      "original_total_seconds": [
+        0.058235899996361695,
+        0.05872529999760445,
+        0.05833569999958854,
+        0.05705800000578165,
+        0.05752869999560062
+      ],
+      "original_mean_total_seconds": 0.05797671999898739,
+      "provenance_sha256": {
+        "protocol_run1": "4e65a412bcdb091b8d8f4aec97db4c9e144e8bd17a6fbad39f5d7dfcb0f21214",
+        "support_run1": "d6a4bc3204d424a95b09188d360af410eb19ae5deb2e3921ce2bc82228e49ef3",
+        "timing_runs": [
+          "ccbffcd8c46e9e71bc1ab0fd234f50025b9ef95bdaad423f5f15c848284840de",
+          "e8806608e29172e9f6946e8abbb8180be27588f2a74a776b52868e50cd96821c",
+          "3223332ac6993a9ee4b0b5a19f1d1cd561ef8758da592c2a7d6d253effd6d3e2",
+          "9a6c5da6a5d50f4dc42e4434dcc03c71cf7bc020282f6f997c2ac55c1122fdcd",
+          "51101aa57fd1fa0360e16a3039aac886b2db598acffd537a3518fbc42a08f7cf"
+        ]
+      }
+    },
+    {
+      "case": "n128_k64",
+      "d_P": 8,
+      "d_target": 16,
+      "stages": [
+        {
+          "kind": "V",
+          "N": 64,
+          "K": 44,
+          "groups": 56832,
+          "cutoff": 7,
+          "RM_gap_used": false,
+          "q": 140,
+          "nodes": 29
+        }
+      ],
+      "zero_first_nodes": null,
+      "enumeration": {
+        "direct_candidates": 343772,
+        "quotient_lifts": 169386,
+        "final_directory_outputs": 166321,
+        "output_sha256": "6668ffc5ed7f86924013822d0d5b622e1889299147cf31356e57633b35bcb32b",
+        "SQ_exact_fraction": "171886/84693"
+      },
+      "original_total_seconds": [
+        5.314936700000544,
+        5.337147799989907,
+        5.330031100005726,
+        5.32455169998866,
+        5.3230664000002434
+      ],
+      "original_mean_total_seconds": 5.325946739997017,
+      "provenance_sha256": {
+        "protocol_run1": "47a23f4d9c62e178011ca3377abd859bd30848bed97858c2a43b1b49fd61044a",
+        "support_run1": "b1ec9233ae1bf4c9f02c7ce8866dfa34ee53fae1161bcae60e7a79868c3d716e",
+        "timing_runs": [
+          "5da6560d143f218346a49cdc570aac652e99ce101609d4d530d47df60e396fa2",
+          "74e0ef7f63a13596a104ef99527a9423e3ebc0bcda0ffd07e9b0c87f4ac6b369",
+          "5f866d0f1bea68f6439196d502b0bfaf50fa94901b8ee0294b5bb04deeb0c2e3",
+          "a0b46ab578986756dc358b3546783141c8e647c4ac894d917568187fa7248680",
+          "8c92487037e9528a7a32316f803a7c46569c398021a6c97c6a4b8ba8b241a3c0"
+        ]
+      }
+    },
+    {
+      "case": "n256_k64",
+      "d_P": 32,
+      "d_target": 48,
+      "stages": [
+        {
+          "kind": "V",
+          "N": 128,
+          "K": 52,
+          "groups": 20816,
+          "cutoff": 16,
+          "RM_gap_used": true,
+          "q": 226,
+          "nodes": 6116
+        },
+        {
+          "kind": "T",
+          "N": 256,
+          "K": 64,
+          "groups": 28,
+          "cutoff": 32,
+          "RM_gap_used": true,
+          "q": 144,
+          "nodes": 88,
+          "r": 87,
+          "Phi": "7/32"
+        }
+      ],
+      "zero_first_nodes": 92,
+      "enumeration": {
+        "direct_candidates": 120259084288,
+        "quotient_lifts": 1792,
+        "final_directory_outputs": 1792,
+        "output_sha256": "6661b1900a79a5fedef55c00062053be289220aec6c2fcd197a563d460e35250",
+        "SQ_exact_fraction": "67108864"
+      },
+      "original_total_seconds": [
+        1.3915176000009524,
+        1.3906483000027947,
+        1.390007299996796,
+        1.4113936999929138,
+        1.4121008000074653
+      ],
+      "original_mean_total_seconds": 1.3991335400001845,
+      "provenance_sha256": {
+        "protocol_run1": "03b7ca8c89d2d139b5d24bb33b2518633d68c4100c7616780f0f2c0a77874a43",
+        "support_run1": "71d6739f6cf059557207dbd87cfbfce1d8328401745922a77d58578e1bdefa96",
+        "timing_runs": [
+          "f0b7ae76a6c28748e9b08dc75f8de8fed2af9ae1a379bb4f08187b8b525c5351",
+          "c93e0eb91695f052cf75e9d441f1e590ddd0540322ac317f4e176caffcae2b40",
+          "3a397b37dd6fba696aeec5503147d53b5020afe1803dee8e5025f6f7a738c028",
+          "9491667ec5621d2e4f8b84a56c2de6d7c5c4e7ca74f19f820bcdabbab768d6b5",
+          "a827a32520907c0b3571804666a1c826f0c2d75d38631323b901e96b1107f8f4"
+        ]
+      }
+    },
+    {
+      "case": "n256_k128",
+      "d_P": 16,
+      "d_target": 24,
+      "stages": [
+        {
+          "kind": "V",
+          "N": 128,
+          "K": 89,
+          "groups": 51872,
+          "cutoff": 8,
+          "RM_gap_used": true,
+          "q": 371,
+          "nodes": 10836
+        },
+        {
+          "kind": "T",
+          "N": 256,
+          "K": 128,
+          "groups": 920,
+          "cutoff": 16,
+          "RM_gap_used": true,
+          "q": 390,
+          "nodes": 303,
+          "r": 302,
+          "Phi": "115/8"
+        }
+      ],
+      "zero_first_nodes": 485,
+      "enumeration": {
+        "direct_candidates": 60293120,
+        "quotient_lifts": 29440,
+        "final_directory_outputs": 29440,
+        "output_sha256": "9e807bd4ea5ee20c95a4ce2ef0b7622db37ad140d318e9a925d8f76081d195b7",
+        "SQ_exact_fraction": "2048"
+      },
+      "original_total_seconds": [
+        5.759829000002355,
+        5.799034600000596,
+        5.7849198999902,
+        5.74177600000985,
+        5.75688829999126
+      ],
+      "original_mean_total_seconds": 5.768489559998852,
+      "provenance_sha256": {
+        "protocol_run1": "1016f42409c0a2fd6c23ea3f2db4b284f7b8130e9e67ce4d33bc4f0e96b93cdb",
+        "support_run1": "d67f10996b3e8ccd09c7d551a4b7b2999b2d814cbae479e7960bcb6cb92704d7",
+        "timing_runs": [
+          "d9bf9bd8f3c32cffe184d2799c731f132ee14df96347f821f0f8e8d5656ea471",
+          "840a688982e4ce702295472b11a17de18e39a17300cd2964cdd11be7139a5a86",
+          "81cbc4f9a69234582e3fc80cf359c14977081d26935a7cd4a282f27687d0cb38",
+          "50f2d2d20cb70c6bd48392d4f4170505d8f161267799f84840eed5087508aff0",
+          "dbdfe229498544d3bead521656a1eb546db4b95ec9f410419eb1412cbd07fdbb"
+        ]
+      }
+    },
+    {
+      "case": "n256_k171",
+      "d_P": 8,
+      "d_target": 12,
+      "stages": [
+        {
+          "kind": "V",
+          "N": 128,
+          "K": 108,
+          "groups": 7616,
+          "cutoff": 4,
+          "RM_gap_used": true,
+          "q": 356,
+          "nodes": 77
+        },
+        {
+          "kind": "T",
+          "N": 256,
+          "K": 171,
+          "groups": 304,
+          "cutoff": 8,
+          "RM_gap_used": true,
+          "q": 756,
+          "nodes": 423,
+          "r": 422,
+          "Phi": "19/32"
+        }
+      ],
+      "zero_first_nodes": 436,
+      "enumeration": {
+        "direct_candidates": 77824,
+        "quotient_lifts": 4864,
+        "final_directory_outputs": 4864,
+        "output_sha256": "7be11541dcdc4ab67a9dfd443b1e6e78ef30fac03817b7fbbf03d9c345255154",
+        "SQ_exact_fraction": "16"
+      },
+      "original_total_seconds": [
+        1.5551516999985324,
+        1.5553135000081966,
+        1.5474620000022696,
+        1.5541546000022208,
+        1.5479054000024917
+      ],
+      "original_mean_total_seconds": 1.5519974400027423,
+      "provenance_sha256": {
+        "protocol_run1": "a89c84ad159772a3b8c415ec25cc0d565047de15b9d93bc6e2356a6f1c6cf130",
+        "support_run1": "3e8fd5bdbfecff01189968835e806b6dfd94d5330db5949cffc4c3c812d2a7ca",
+        "timing_runs": [
+          "b3bfc9528955b856485005ece3ce5d389840b85089f71ff1e5592961c8a1b874",
+          "c7cc8488727ad4bcf2fe901e51fec123bbdcad3c19dec1aa8e5d97d8260248f1",
+          "a050c6f09a610f10a302430e6f837727fd032ae347d384d9460716ac591a2549",
+          "e1201cd192b87d7998527eb3b44168521b9af42439f31263861de5f62991e4be",
+          "759d3cbcdfe5c00a3e30ad078bebab8bd765b57a376361efb99773abfb120f26"
+        ]
+      }
+    },
+    {
+      "case": "n1024_k512",
+      "d_P": 16,
+      "d_target": 24,
+      "stages": [
+        {
+          "kind": "T",
+          "N": 256,
+          "K": 223,
+          "groups": 352,
+          "cutoff": 4,
+          "RM_gap_used": true,
+          "q": 721,
+          "nodes": 457,
+          "r": 456,
+          "Phi": "11"
+        },
+        {
+          "kind": "T",
+          "N": 512,
+          "K": 369,
+          "groups": 608,
+          "cutoff": 8,
+          "RM_gap_used": true,
+          "q": 3504,
+          "nodes": 1773,
+          "r": 1772,
+          "Phi": "19/65536"
+        }
+      ],
+      "zero_first_nodes": 1802,
+      "enumeration": {
+        "direct_candidates": 155648,
+        "quotient_lifts": 9728,
+        "final_directory_outputs": 9728,
+        "output_sha256": "f1e9203f64c9f54f46079deae8d2d77d53bdf4ffe97e0c4188878f1c299a9ade",
+        "SQ_exact_fraction": "16"
+      },
+      "original_total_seconds": [
+        2.1631847000098787,
+        2.1729925999970874,
+        2.1663924000022234,
+        2.1607002000091597,
+        2.164438499996322
+      ],
+      "original_mean_total_seconds": 2.165541680002934,
+      "provenance_sha256": {
+        "protocol_run1": "46ccb5caee07af30c26efa59d98eca7e823723135990a858df45c0ee6034bce5",
+        "support_run1": "d9b9ca7ab35ff3aa0c26614758c9b1cdce5f60247020e5421c30c748e4b6a2f9",
+        "timing_runs": [
+          "b8ae939a25f8e065ccd087a793decc7d07c06f3f29e6c3c9885b685564ea94e2",
+          "78f9563c2bb53bd55580f7b2e9683f827eb1137d9b1397089287e958f0b89c80",
+          "7af33c8e0c02409ba5c9e0564d4601cef548061e5277240e11daf3f27ed3ac1f",
+          "2930677567bd110c49e681e5999a48722dcd44ffc0bc79c5c3bae088d4afdf75",
+          "f08badce0b53a65ce78bb0835d2257d379cfc38314ee4f64e31c4c8bb8abc71e"
+        ]
+      }
+    }
+  ]
+}
