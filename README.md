@@ -138,7 +138,7 @@ reversal. Each file also includes the information set and an exact-distance
 witness. The reproduction command regenerates these expressions and checks
 them against the archive.
 
-## Scope and AI assistance disclosure
+## Scope and AI Statement
 
 The public code is limited to the algorithms, six designs and experiments
 reported in this paper. This is a tutorial, not a general-purpose high-speed
@@ -149,16 +149,16 @@ its gap applies; `[128,64]` still requires a complete cutoff-7 constituent
 directory. General search and enumeration may remain exponential. A verified
 minimum distance is not a claim of improved SCL error rate.
 
-**This repository was created by GPT-6 by organizing the authors' local
-experimental materials**, with the aim of helping potential readers understand
-the paper and helping reviewers assess its accuracy. Consistent with the
-paper's acknowledgement, GPT-6 Astra has assisted with (1) novelty audits
-against existing literature, (2) mathematical accuracy and rigor audits,
-(3) alignment audits between actual experiments and the manuscript's
-algorithms, (4) creation of this reader-friendly reproducibility repository,
-and (5) publication-standards audits. The authors believe this assistance has
-improved the work's rigor and reproducibility and accept responsibility for
-the accuracy and reliability of all paper and repository content.
+The authors used OpenAI's GPT-6 model to audit the paper's mathematical
+rigor and organize an open-source repository for readers
+to study and reproduce its algorithms and experiments
+(see the repository footnote in Section V).
+The authors independently developed the technical content and take
+responsibility for all content in this paper.
+
+**OpenAI's GPT-6 created this repository from the authors' local experimental
+materials** to help readers study and reproduce the paper's algorithms and
+experiments and help reviewers assess its accuracy.
 
 The implementation is released under the [MIT License](LICENSE). Please cite
 the paper when using its results; the submission has no proceedings DOI yet.
